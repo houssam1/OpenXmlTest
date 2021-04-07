@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "KzaLE5OQyxGAHiXYPImMS19+zOld5MZbcT/Ez4Eg4ZFnzU2XQ6+49fiXIT24GPa+91Kc6XXBkZMxKWDKBruaPg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tliou\\Downloads\\PocOpenXml-master\\testdocker\\OpenXmlPocDocker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tliou\\.nuget\\packages\\documentformat.openxml\\2.12.3\\documentformat.openxml.2.12.3.nupkg.sha512",
+    "C:\\Users\\tliou\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\tliou\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\tliou\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
