@@ -179,7 +179,7 @@ namespace OpenXmlPocDocker
             }
             Row row = new Row() { RowIndex = index };
             row.Append(CreateCell(text, styleIndex));
-            row.Append(CreateCellWithFormula("LIEN_HYPERTEXTE(CONCAT(F1,A"+index+"))", styleIndex));
+            row.Append(CreateCellWithFormula("LIEN_HYPERTEXTE(CONCATENER(F1,A"+index+"))", styleIndex));
             row.Append(CreateCellWithFormula("LIEN_HYPERTEXTE(\""+FlagUrl+text+"\")", styleIndex));
             return row;
         }

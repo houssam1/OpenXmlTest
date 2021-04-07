@@ -200,11 +200,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tliou\\Downloads\\PocOpenXml-master\\testdocker\\OpenXmlPocDocker.csproj",
+      "projectUniqueName": "C:\\Users\\tliou\\Downloads\\PocOpenXml\\testdocker\\OpenXmlPocDocker.csproj",
       "projectName": "OpenXmlPocDocker",
-      "projectPath": "C:\\Users\\tliou\\Downloads\\PocOpenXml-master\\testdocker\\OpenXmlPocDocker.csproj",
+      "projectPath": "C:\\Users\\tliou\\Downloads\\PocOpenXml\\testdocker\\OpenXmlPocDocker.csproj",
       "packagesPath": "C:\\Users\\tliou\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tliou\\Downloads\\PocOpenXml-master\\testdocker\\obj\\",
+      "outputPath": "C:\\Users\\tliou\\Downloads\\PocOpenXml\\testdocker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tliou\\AppData\\Roaming\\NuGet\\NuGet.Config"
