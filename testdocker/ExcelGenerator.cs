@@ -50,6 +50,9 @@ namespace OpenXmlPocDocker
             SheetData sheetData = worksheetPart.Worksheet.AppendChild(new SheetData());
             GenerateSheetData(sheetData, data);
 
+            // Create CalculationProperties to calculate formulas automaticly
+            SetAutoCalculation(workbookpart);
+
             // Close the document.  
             spreadsheetDocument.Close(); 
 
@@ -179,8 +182,8 @@ namespace OpenXmlPocDocker
             }
             Row row = new Row() { RowIndex = index };
             row.Append(CreateCell(text, styleIndex));
-            row.Append(CreateCellWithFormula("LIEN_HYPERTEXTE(CONCATENER(F1,A"+index+"))", styleIndex));
-            row.Append(CreateCellWithFormula("LIEN_HYPERTEXTE(\""+FlagUrl+text+"\")", styleIndex));
+            row.Append(CreateCellWithFormula("HYPERLINK(CONCATENATE(F1,A"+index+"))", styleIndex));
+            row.Append(CreateCellWithFormula("HYPERLINK(\""+FlagUrl+text+"\")", styleIndex));
             return row;
         }
         private static Cell CreateCell(string text, UInt32Value styleIndex)
@@ -214,6 +217,16 @@ namespace OpenXmlPocDocker
                 return CellValues.Number;
             }
             return CellValues.String;
+        }
+        
+        private static void SetAutoCalculation(WorkbookPart workbookpart)
+        {
+            CalculationProperties cpr = new CalculationProperties();
+            cpr.FullCalculationOnLoad = true;
+            cpr.ForceFullCalculation = true;
+            cpr.CalculationMode = CalculateModeValues.Auto;
+            workbookpart.Workbook.CalculationProperties = cpr;
+            workbookpart.Workbook.Save();
         }
     }
 }
